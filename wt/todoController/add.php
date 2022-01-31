@@ -3,7 +3,7 @@
 
 session_start();
 
-//print("slawwwww");
+
 $servername='mysql-67581-0.cloudclusters.net:19366';
 $username='admin';
 $password='a3JILML2';
@@ -14,10 +14,13 @@ $con=mysqli_connect($servername,$username,$password,"$dbname");
     }
 
 
+if(!$con)
+{
+    echo "there was an error in the connection";
+}
 
 
-
-$query = "SELECT * FROM web.todoList where email = '" . $_SESSION["user"] . "';";
+$query = "INSERT into toDoList where email = '" . $_SESSION["user"] . "';";
 $result = mysqli_query($con, $query);
 
 $xx = 0;
