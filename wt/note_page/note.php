@@ -39,7 +39,7 @@ if($result){
 }
 
 else{
-    print( "There seems to be an error!" );
+    //print( "There seems to be an error!" );
 }
 
 
