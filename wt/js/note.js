@@ -1,3 +1,5 @@
+
+
 $(function() {
     function removeNote() {
         $(".remove-note").off('click').on('click', function(event) {
@@ -7,12 +9,7 @@ $(function() {
         })
     }
 
-    function favouriteNote() {
-        $(".favourite-note").off('click').on('click', function(event) {
-          event.stopPropagation();
-          $(this).parents('.single-note-item').toggleClass('note-favourite');
-        })
-    }
+
 
 
     var $btns = $('.note-link').click(function() {
@@ -68,8 +65,8 @@ $(function() {
         $('#addnotesmodal').modal('hide');
 
         removeNote();
-        favouriteNote();
-        addLabelGroups();
+        //favouriteNote();
+
     });
 
     $('#addnotesmodal').on('hidden.bs.modal', function (event) {
@@ -79,20 +76,14 @@ $(function() {
     })
 
     removeNote();
-    favouriteNote();
-    addLabelGroups();
+    //favouriteNote();
+  
 
     $('#btn-n-add').attr('disabled', 'disabled'); 
 })
 
 
-function login() {
-    if ($("#username").val() == "admin" && $("#password").val() == "password") {
-      alert("You are a valid user");
-    } else {
-      alert("You are not a valid user");
-    }
-  }
+
 
  $('#note-has-title').keyup(function() {
       var empty = false;

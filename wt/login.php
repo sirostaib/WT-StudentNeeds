@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 //require_once "db.php";
 
   
@@ -29,7 +29,10 @@ if(!empty($_POST['inputEmail']) && !empty($_POST['inputPassword'])) {
     if($email == $dbusername && $pass == $dbpassword)  
     {  
     session_start();  
-    $_SESSION['sess_user']=$user;  
+    //$_SESSION['sess_user']=$user; 
+    $_SESSION["user"] = $email;
+
+echo "Session variables are set."; 
   
     /* Redirect browser */  
     header("Location: todolist.html");  
