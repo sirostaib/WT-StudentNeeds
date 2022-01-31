@@ -1,7 +1,7 @@
 <?php
 //print("wooow it is working!");
 
-session_start();
+//session_start();
 
 //print("slawwwww");
 $servername='mysql-67581-0.cloudclusters.net:19366';
