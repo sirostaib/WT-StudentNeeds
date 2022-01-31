@@ -13,7 +13,7 @@ var xmlHTTP = new XMLHttpRequest();
     xmlHTTP.onreadystatechange = function()
     {
         if(xmlHTTP.readyState == 4 && xmlHTTP.status == 200) {
-            alert(xmlHTTP.responseText);
+            //alert(xmlHTTP.responseText);
             //var myData = xmlHTTP.responseText;
             var myData =  JSON.parse( xmlHTTP.responseText ); //res.text()
 

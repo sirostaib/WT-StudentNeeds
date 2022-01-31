@@ -29,7 +29,8 @@
             <a class="nav-link active" aria-current="page" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-danger ms-lg-3" style="width: 100px;">Logout</button>
+            <form action="logout.php" method="post" >
+                <button type="submit" class="btn btn-danger ms-lg-3" style="width: 100px;">Logout</button></form>
           </li>
 
           
@@ -71,7 +72,21 @@
                         <p class="note-inner-content text-muted" data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.</p>
                     </div>
                     <div class="d-flex align-items-center">
-                        <span class="mr-1"><i class="fa fa-trash remove-note" onclick="removee"></i></span>
+                        <span class="mr-1"><i class="fa fa-trash remove-note" ></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 single-note-item all-category" >
+                <div class="card card-body">
+                    <span class="side-stick"></span>
+                    <h5 class="note-title text-truncate w-75 mb-0" data-noteheading="Book a Ticket for Movie">This is my note! <i class="point fa fa-circle ml-1 font-10"></i></h5>
+                    <p class="note-date font-12 text-muted">11 June 2019</p>
+                    <div class="note-content">
+                        <p class="note-inner-content text-muted" data-notecontent="Blandit tempus porttitor aasfs. Integer posuere erat a ante venenatis.">For longer ones, like notes that are needed in a company or office setting, they need to be professional-looking as much as possible. Make it clear and direct to the point. And if you want to have a much easier way of making notes, our sample note templates are probably what you need. These are ready-made note templates that are available for download too!</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="mr-1"><i class="fa fa-trash remove-note"></i></span>
                     </div>
                 </div>
             </div>
